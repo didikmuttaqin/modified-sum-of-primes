@@ -1,0 +1,26 @@
+package github;
+import java.util.*;
+        
+
+public class Github {
+
+    public static void main(String[] args) {
+        int awal, akhir, i;
+        Scanner s =new Scanner(System.in);
+        System.out.print("Awal: ");
+        awal = s.nextInt();
+        System.out.print("Akhir: ");
+        akhir = s.nextInt();
+        i=awal;
+        
+        while (i <= akhir){
+            if (i == 2){
+                System.out.println(i);
+            }
+            if (i % 2 == 1 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0){
+                System.out.println(i);
+            }
+        i++;
+        }
+    }
+}
